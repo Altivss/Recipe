@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Recipes — Rachel's Recipe</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand"><a href="main.html">Rachel's Recipe</a></div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container recipes-large">
+        <section>
+          <h1>All Recipes</h1>
+          <p>Browse our collection of easy-to-follow recipes.</p>
+
+          <div class="food" id="recipe-list">
+            <div class="sample" data-id="fried" data-tags="chicken,comfort">
+              <a class="card-link" href="friedChicken.html">
+                <img loading="lazy" src="img/FRIED.jpg" alt="Crispy Fried Chicken">
+                <div class="card-overlay">
+                  <button class="fav-btn" aria-label="Favorite" data-id="fried">♡</button>
+                  <span>View recipe</span>
+                </div>
+              </a>
+              <h3>Crispy Fried Chicken</h3>
+              <p class="excerpt">Crispy outside, juicy inside our go-to fried chicken with a seasoned flour mix.</p>
+            </div>
+
+            <div class="sample" data-id="adobo" data-tags="chicken,comfort">
+              <a class="card-link" href="adobo.html">
+                <img loading="lazy" src="img/ADOBO.jpg" alt="Chicken Adobo">
+                <div class="card-overlay">
+                  <button class="fav-btn" aria-label="Favorite" data-id="adobo">♡</button>
+                  <span>View recipe</span>
+                </div>
+              </a>
+              <h3>Chicken Adobo</h3>
+              <p class="excerpt">A classic tangy-salty Filipino stew, great with rice.</p>
+            </div>
+
+            <div class="sample" data-id="menudo" data-tags="pork,comfort">
+              <a class="card-link" href="menudo.html">
+                <img loading="lazy" src="img/MENUDO.jpg" alt="Pork Menudo">
+                <div class="card-overlay">
+                  <button class="fav-btn" aria-label="Favorite" data-id="menudo">♡</button>
+                  <span>View recipe</span>
+                </div>
+              </a>
+              <h3>Pork Menudo</h3>
+              <p class="excerpt">Slow-simmered pork with potatoes and carrots family-friendly and hearty.</p>
+            </div>
+
+            <div class="sample" data-id="honey" data-tags="pork,comfort">
+              <a class="card-link" href="honeygarlic.html">
+                <img loading="lazy" src="img/HONEY.jpg" alt="Honey Garlic Pork Chops">
+                <div class="card-overlay">
+                  <button class="fav-btn" aria-label="Favorite" data-id="honey">♡</button>
+                  <span>View recipe</span>
+                </div>
+              </a>
+              <h3>Honey Garlic Pork Chops</h3>
+              <p class="excerpt">Sweet and savory pork chops finished with sticky honey-garlic glaze.</p>
+            </div>
+
+            <div class="sample" data-id="karekare" data-tags="pork,comfort">
+              <a class="card-link" href="karekare.html">
+                <img loading="lazy" src="img/KAREKARE.jpg" alt="Kare-Kare">
+                <div class="card-overlay">
+                  <button class="fav-btn" aria-label="Favorite" data-id="karekare">♡</button>
+                  <span>View recipe</span>
+                </div>
+              </a>
+              <h3>Kare-Kare</h3>
+              <p class="excerpt">A peanut-based Filipino stew with tender meat and bold flavors.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"> 
+            <div class="footer-inner">
+                    <form id="newsletter" class="newsletter" aria-label="Subscribe to newsletter">
+                        <input type="email" id="newsletter-email" placeholder="Your email" aria-label="Your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <p>&copy; 2026 Rachel's Recipe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

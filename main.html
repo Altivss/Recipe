@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rachel's Recipe</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <a href="main.html">Rachel's Recipe</a>
+        </div>
+        <div class="header-actions">
+            <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+        <nav class="nav-links" aria-label="Primary navigation">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="container">
+        <section class="hero">
+            <h1>Welcome to Rachel's Recipe</h1>
+            <p>Delicious, easy-to-follow recipes for home cooks. Find meal ideas, cooking tips, and step-by-step guides.</p>
+            <!-- Hero gallery: three equal images shown horizontally -->
+            <div class="hero-gallery" role="group" aria-label="Featured dishes">
+                <img src="img/dessert.jpg" alt="Dessert">
+                <img src="img/dessert1.jpg" alt="Dessert variant">
+                <img src="img/ulam.jpg" alt="Ulam dish">
+            </div>
+
+
+            <a class="btn" href="recipe.html">Browse Recipes</a>
+        </section>
+
+        <section class="about">
+            <h2>About the Website</h2>
+            <p>Rachel’s Recipe is a welcoming space for food lovers who enjoy cooking at home. Explore classic comfort
+                meals and discover simple techniques that make cooking fun and satisfying.</p>
+            <p>We focus on approachable, family-friendly recipes and provide step-by-step instructions, ingredient
+                swaps, and plating tips. New content is added regularly — check the Recipes page for full guides.</p>
+            <p><strong>Quick tips:</strong> use a thermometer for meats, rest fried food on a rack (not paper), and taste as
+                you go.</p>
+        </section>
+
+                        <div class="recipe-controls">
+                                <div class="tags">
+                                        <button class="tag-btn" data-tag="all">All</button>
+                                        <button class="tag-btn" data-tag="chicken">Chicken</button>
+                                        <button class="tag-btn" data-tag="pork">Pork</button>
+                                        <button class="tag-btn" data-tag="comfort">Comfort</button>
+                                </div>
+                                <input id="recipe-search" type="search" placeholder="Search recipes..." aria-label="Search recipes">
+                        </div>
+
+                        <div class="food" id="recipe-list">
+                                <div class="sample" data-id="fried" data-tags="chicken,comfort">
+                                        <a class="card-link" href="friedChicken.html">
+                                            <img loading="lazy" src="img/FRIED.jpg" alt="Crispy Fried Chicken">
+                                            <div class="card-overlay">
+                                                    <button class="fav-btn" aria-label="Favorite" data-id="fried">♡</button>
+                                                    <span>View recipe</span>
+                                            </div>
+                                        </a>
+                                        <h3 data-title="crispy fried chicken">Crispy Fried Chicken</h3>
+                                        <p class="excerpt">Crispy outside, juicy inside — our go-to fried chicken with a seasoned flour mix.</p>
+                                </div>
+
+                                <div class="sample" data-id="adobo" data-tags="chicken,comfort">
+                                        <a class="card-link" href="adobo.html">
+                                            <img loading="lazy" src="img/ADOBO.jpg" alt="Chicken Adobo">
+                                            <div class="card-overlay">
+                                                    <button class="fav-btn" aria-label="Favorite" data-id="adobo">♡</button>
+                                                    <span>View recipe</span>
+                                            </div>
+                                        </a>
+                                        <h3 data-title="chicken adobo">Chicken Adobo</h3>
+                                        <p class="excerpt">A classic tangy-salty Filipino stew — great with rice and simple pantry ingredients.</p>
+                                </div>
+
+                                <div class="sample" data-id="menudo" data-tags="pork,comfort">
+                                        <a class="card-link" href="menudo.html">
+                                            <img loading="lazy" src="img/MENUDO.jpg" alt="Pork Menudo">
+                                            <div class="card-overlay">
+                                                    <button class="fav-btn" aria-label="Favorite" data-id="menudo">♡</button>
+                                                    <span>View recipe</span>
+                                            </div>
+                                        </a>
+                                        <h3 data-title="pork menudo">Pork Menudo</h3>
+                                        <p class="excerpt">Slow-simmered pork with potatoes and carrots — family-friendly and hearty.</p>
+                                </div>
+
+                                <div class="sample" data-id="honey" data-tags="pork,comfort">
+                                        <a class="card-link" href="honeygarlic.html">
+                                            <img loading="lazy" src="img/HONEY.jpg" alt="Honey Garlic Pork Chops">
+                                            <div class="card-overlay">
+                                                    <button class="fav-btn" aria-label="Favorite" data-id="honey">♡</button>
+                                                    <span>View recipe</span>
+                                            </div>
+                                        </a>
+                                        <h3 data-title="honey garlic pork chops">Honey Garlic Pork Chops</h3>
+                                        <p class="excerpt">Sweet and savory pork chops finished with sticky honey-garlic glaze.</p>
+                                </div>
+
+                                <div class="sample" data-id="karekare" data-tags="pork,comfort">
+                                        <a class="card-link" href="karekare.html">
+                                            <img loading="lazy" src="img/KAREKARE.jpg" alt="Kare-Kare">
+                                            <div class="card-overlay">
+                                                    <button class="fav-btn" aria-label="Favorite" data-id="karekare">♡</button>
+                                                    <span>View recipe</span>
+                                            </div>
+                                        </a>
+                                        <h3 data-title="kare-kare">Kare-Kare</h3>
+                                        <p class="excerpt">A peanut-based Filipino stew with tender meat and bold flavors.</p>
+                                </div>
+                        </div>
+
+                        <!-- Quick preview modal -->
+                        <div id="preview-modal" class="modal" aria-hidden="true">
+                            <div class="modal-backdrop" id="modal-backdrop"></div>
+                            <div class="modal-content" role="dialog" aria-modal="true">
+                                <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+                                <img id="modal-img" src="" alt="Preview image"/>
+                                <h3 id="modal-title"></h3>
+                                <p id="modal-excerpt"></p>
+                                <a id="modal-link" class="btn" href="#">Open full recipe</a>
+                            </div>
+                        </div>
+
+        <section class="social">
+            <h2>Follow Us & Stay Connected</h2>
+            <div class="social-content">
+                <p class="social-intro">Join our growing community of food lovers and home cooks! Get daily recipe inspiration, cooking tips, and behind-the-scenes content directly from Rachel's kitchen.</p>
+                <p class="social-desc">Follow us on social media to discover seasonal recipes, answer your cooking questions, and share your own creations. We love seeing what you're cooking!</p>
+                <p class="social-cta">Tag us in your posts with <strong>#rachelsrecipe</strong> for a chance to be featured on our page. Let's cook together!</p>
+            </div>
+            <div class="social-links">
+                <a class="social-link" href="https://www.facebook.com" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.3c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H21l-1 3.9h-2v7A10 10 0 0022 12z"/></svg>
+                    <span class="sr-only">Facebook</span>
+                </a>
+
+                <a class="social-link" href="https://www.twitter.com" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 5.9c-.6.3-1.2.5-1.9.6.7-.4 1.2-1.1 1.4-1.9-.7.4-1.5.7-2.4.9A3.9 3.9 0 0016.5 4c-2.2 0-4 1.9-4 4.3 0 .3 0 .6.1.9-3.3-.2-6.2-1.9-8.1-4.6-.4.7-.6 1.6-.6 2.6 0 1.6.9 3 2.2 3.8-.5 0-1-.1-1.4-.4v.1c0 2.3 1.6 4.2 3.7 4.6-.4.1-.9.2-1.3.2-.3 0-.6 0-.8-.1.6 2 2.3 3.4 4.3 3.5A7.9 7.9 0 113 19.6c2.1 1.3 4.7 2 7.4 2 8.9 0 13.8-7.6 13.8-14.1v-.6c.9-.7 1.6-1.6 2.1-2.6-.8.4-1.6.7-2.4.8z"/></svg>
+                    <span class="sr-only">Twitter</span>
+                </a>
+
+                <a class="social-link" href="https://www.instagram.com" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.3A4.7 4.7 0 1016.7 13 4.7 4.7 0 0012 8.3zm6.2-3.4a1.1 1.1 0 11-1.1 1.1 1.1 1.1 0 011.1-1.1z"/></svg>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container"> 
+            <div class="footer-inner">
+                    <form id="newsletter" class="newsletter" aria-label="Subscribe to newsletter">
+                        <input type="email" id="newsletter-email" placeholder="Your email" aria-label="Your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <p>&copy; 2026 Rachel's Recipe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
