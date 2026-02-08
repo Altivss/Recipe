@@ -1,45 +1,78 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css">
-		<title>About — Rachel's Recipe</title>
-	</head>
-	<body>
-		<header class="site-header">
-			<div class="brand"><a href="index.html">Rachel's Recipe</a></div>
-			<nav class="nav-links" aria-label="Primary navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="recipe.html">Recipes</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
 
-		<main>
-			<div class="container">
-				<section class="about">
-					<h1>About Rachel's Recipe</h1>
-					<p>Rachel's Recipe shares simple, family-friendly recipes and practical cooking tips designed for everyday home cooks. We focus on approachable meals made with easy-to-find ingredients, so anyone can enjoy cooking without stress. From classic Filipino favorites like Chicken Adobo and Kare-Kare to crispy, savory, and sweet dishes, our recipes are perfect for busy families, beginners, and food lovers alike. Our goal is to make home cooking enjoyable, affordable, and full of flavor—one recipe at a time</p>
-				</section>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css">
+	<title>About — Rachel's Recipe</title>
+</head>
 
+<body>
+	<header class="site-header">
+		<div class="brand"><a href="index.html">Rachel's Recipe</a></div>
+		<div class="header-actions">
+			<button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+		</div>
+		<nav class="nav-links" aria-label="Primary navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="recipe.html">Recipes</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="about">
+
+				<h2>Welcome to Rachel's Recipe. We are home cooks sharing approachable recipes that bring joy to
+					everyday
+					meals. Our mission is to make cooking simple, tasty, and enjoyable for everyone.</h2>
+
+
+				<div class="purpose">
+					<h3>Purpose of this website</h3>
+					<p>Rachel's Recipe aims to preserve and celebrate beloved Filipino home-cooking by providing clear,
+						approachable recipes and practical tips.
+						We focus on everyday family meals — from crispy fried chicken to hearty stews — with
+						step-by-step instructions and helpful variations so both new cooks and experienced home chefs
+						can achieve great results.
+						Our goal is to make authentic flavors accessible, encourage experimentation, and help people
+						create memorable meals to share.</p>
+				</div>
+
+				<div class="developer">
+					<h3>About Developer</h3>
+					<p>Hello — Rachelle Ann behind Rachel's Recipe. I build simple, responsive websites with HTML, CSS,
+						and JavaScript, and I have a passion for food and storytelling.
+						I enjoy turning family recipes into clear, user-friendly pages that are easy to follow on any
+						device. My background includes front-end development, UX-conscious layout design, and basic
+						photography/styling for food.
+						I value accessibility, performance, and a warm, inviting design that puts recipes and cooking
+						tips front and center</p>
+				</div>
+
+			</section>
+
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-inner">
+				<form id="newsletter" class="newsletter" aria-label="Subscribe to newsletter">
+					<input type="email" id="newsletter-email" placeholder="Your email" aria-label="Your email">
+					<button type="submit" class="btn">Subscribe</button>
+				</form>
+				<p>&copy; 2026 Rachel's Recipe. All rights reserved.</p>
 			</div>
-		</main>
-
-		<footer class="site-footer">
-        <div class="container"> 
-            <div class="footer-inner">
-                    <form id="newsletter" class="newsletter" aria-label="Subscribe to newsletter">
-                        <input type="email" id="newsletter-email" placeholder="Your email" aria-label="Your email">
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                    <p>&copy; 2026 Rachel's Recipe. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+		</div>
+		</div>
+	</footer>
+		<script src="script.js"></script>
 	</body>
-</html>
+
+	</html>
